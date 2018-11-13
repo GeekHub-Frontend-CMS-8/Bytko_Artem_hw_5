@@ -1,0 +1,266 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+.wrap{
+	max-width: 1150px;
+	margin: 0px auto;
+	box-sizing: border-box;
+}
+.logo_space{
+	width: 100%;
+	padding: 30px 0px;
+	max-height: 100px;
+	box-sizing: content-box;
+	background-color: #f6f9f9;
+}
+/* BANER */
+
+.baner{
+	padding: 220px 90px;
+	background-image: url("../img/hero-background.png");
+	background-size: cover;
+	text-align: center;
+}
+.headline{
+	display: inline-block;
+	padding:0px 35px;
+	max-width: 600px;
+	font-size: 120px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: solid 2px #15a4fa;
+	text-align: center;
+}
+.upper{
+	text-transform: uppercase;
+}
+.headline_desc{
+	padding: 40px 0px 65px;
+	color: #fff;
+	font-size: 20px;
+}
+.btn{
+	padding: 20px 30px;
+	border: 1px solid #15a4fa;
+	background: rgba(255, 245, 215, 0);
+	color: #fff;
+	font-size: 18px;
+}
+.btn:hover{
+	background-color: #15a4fa;
+	transition: 0.3s;
+}
+.arrow{
+	padding-top: 180px;
+}
+/* First section */
+
+.design{
+	padding: 80px 0px 110px;
+	background-color: #f6f9f9;
+	text-align: center;
+}
+.title_h2{
+	color: #2d3950;
+	font-size: 40px;
+}
+.main_paragraph{
+	padding-top: 30px;
+	color: #999;
+	font-size: 20px;
+
+}
+.skill{
+	padding: 65px 0px;
+	text-align: center;
+}
+.flex{
+	display: inline-flex;
+	justify-content: space-between;
+}
+.rule{
+	text-align: center;
+	max-width: 315px;
+	padding: 0px 40px;
+}
+.picture{
+	width: 100px;
+	height: 100px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #5fc3ff;
+	background-image: linear-gradient(to left, transparent 50%, #48BAFF 50%)
+}
+.title_h3{
+	padding: 32px 0px 22px;
+	color: #2d3950;
+	font-size: 22px;
+}
+.desc{
+	color: #999;
+	font-size: 15px;
+}
+/* Portfolio */
+
+.portfolio{
+	text-align: center;
+	padding: 80px 0px 115px;
+	background-color: #f6f9f9;
+}
+.portfolio_desc{
+	padding: 20px 0px 50px;
+	font-size: 15px;
+	color: #909090;
+}
+.portfolio_example_block{
+	display: inline-flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.container{
+	width: 360px;
+	height: 260px;
+	position: relative;
+	margin-top: 30px;
+	background-color: #15a4fa;
+}
+.img {
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.settings-icon{
+	padding: 13px;
+	border: 1px solid #ffffff;
+	margin-left: 10px;
+}
+.middle {
+
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+
+}
+.container:hover .img {
+	opacity: 0.3;
+}
+.container:hover .middle {
+	opacity: 1;
+}
+.settings-icon:hover{
+	background-color: #15a4fa;
+	border: solid 1px #15a4fa; 
+}
+
+/* Form */
+
+.form{
+	background-image: url(../img/stay-with-us-back.png);
+	background-size: 100%;
+}
+form{
+	padding: 75px 0px 110px;
+	margin: 0px auto;
+	max-width: 550px;
+}
+form .title_h2{
+	text-align: center;
+	color: #fff;
+}
+form .desc{
+	text-align: center;
+	padding: 20px 0px;
+}
+.ul_element{
+	padding: 20px 0px;
+}
+.user_date, .comment{
+	padding: 25px 20px;
+	border: solid 1px #999;
+	width: 100%;
+	background: rgba(255, 245, 215, 0);
+	font-size: 15px;
+	box-sizing: border-box;
+}
+.user_date:focus, .comment:focus{
+	border: 1px solid #fff;
+	color: #fff;
+}
+.comment{
+	height: 135px;
+}
+.subscribe{
+	margin-top: 20px;
+	margin-right: 15px;
+}
+.subscribe_label{
+	color: #fff;
+	font-size: 15px; 
+}
+.send{
+	float: right;
+	padding: 15px 50px;
+	background: rgba(255, 245, 215, 0);
+	border: 1px solid #15a4fa;	
+	color: #fff;
+	font-size: 18px;
+}
+.send:hover{
+	background-color: #15a4fa;
+	transition: 0.3s;
+}
+/* Footer */
+
+footer{
+	padding: 40px 0px;
+	background-color: #f6f9f9;
+}
+.footer{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.right{
+	color: #999;
+	font-size: 15px;
+}
+.net{
+	display: inline-flex;
+}
+.icon{
+	padding: 13px;
+	margin-left: 10px;
+	background-color: #15a4fa;
+	border-radius: 2px;
+}
+.icon:first-child{
+	padding: 13px 15px;
+}
+.facebook:hover{
+	background-color: #3b5998;
+	transition: 0.3s; 
+}
+
+.twitter:hover{
+	background-color: #55acee;
+	transition: 0.3s; 
+}
+.google:hover{
+	background-color: #dd4b39;
+	transition: 0.3s;
+}
+.In:hover{
+	background-color: #0976b4;
+	transition: 0.3s;
+}
+
