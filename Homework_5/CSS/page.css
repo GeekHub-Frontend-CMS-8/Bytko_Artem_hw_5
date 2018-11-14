@@ -13,27 +13,34 @@ body{
 	box-sizing: content-box;
 	background-color: #f6f9f9;
 }
+.upper{
+	text-transform: uppercase;
+}
+
 /* BANER */
 
 .baner{
-	padding: 220px 90px;
+	padding: 220px 0px 90px;
 	background-image: url("../img/hero-background.png");
 	background-size: cover;
 	text-align: center;
 }
 .headline{
-	display: inline-block;
-	padding:0px 35px;
 	max-width: 600px;
 	font-size: 120px;
 	font-weight: 700;
 	color: #fff;
 	text-transform: uppercase;
-	border-bottom: solid 2px #15a4fa;
-	text-align: center;
+	margin: 0px auto;
 }
-.upper{
-	text-transform: uppercase;
+.headline::after{
+	content: '';
+	margin: 35px auto;
+	width: 100%;
+	max-width: 600px;
+	height: 2px;
+	background-color: #15a4fa;
+	display: block;
 }
 .headline_desc{
 	padding: 40px 0px 65px;
@@ -77,12 +84,12 @@ body{
 }
 .flex{
 	display: inline-flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .rule{
 	text-align: center;
 	max-width: 315px;
-	padding: 0px 40px;
 }
 .picture{
 	width: 100px;
@@ -264,3 +271,8 @@ footer{
 	transition: 0.3s;
 }
 
+@media only screen and (max-width: 600px){
+	.headline{
+		padding: 0px;
+	}
+}
